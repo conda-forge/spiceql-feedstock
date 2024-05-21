@@ -22,12 +22,13 @@ source:
     sha256: c2775dccc5d8f6d8654bd4b1ef2302b26b8cb75f140640dc2328a58d643f3818
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }} 
+    - {{ stdlib("c") }}
     - cmake >=3.14
     - make
     - swig
