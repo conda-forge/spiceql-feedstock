@@ -7,7 +7,7 @@ package:
 
 source:
   - folder: .
-    url: https://github.com/DOI-USGS/SpiceQL/archive/refs/heads/main.zip
+    url: https://github.com/DOI-USGS/SpiceQL/archive/refs/heads/conda-forge.zip
     # url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
     # sha256: 3a8e3c0a87cb489f87932144ed0dfedd9816a2cb1c35f381aab00ba9fd1ef3ce
 
