@@ -8,7 +8,7 @@ package:
 source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: 7424bca4b07cfdd7ca575be8023a12475d8ae07219f892379d176289ac6ca7b0
+    sha256: 2734be9a559574e2aa8ec6790b31a844c1cb76a0142c88df03ecae2897996f14
 
   # submodules
   - folder: submodules/json
