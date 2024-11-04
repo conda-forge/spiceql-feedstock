@@ -41,12 +41,12 @@ requirements:
     - pip
     - cereal
     - highfive
-    - hdf5
     - cspice
     - spdlog
   run:
     - cspice
     - python
+    - hdf5
 
 test:
   imports:
