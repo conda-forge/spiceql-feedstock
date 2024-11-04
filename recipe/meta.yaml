@@ -63,9 +63,9 @@ about:
   license: CC0-1.0
   license_file:
     - LICENSE.md
-    - submodules/redis-plus-plus/LICENSE
     - submodules/json/LICENSE.MIT
     - submodules/gularkfilesystem/LICENSE
+    - submodules/BTree/LICENSE.md
   doc_url: https://sugar-spice.readthedocs.io/en/latest/#docs
   dev_url: https://code.usgs.gov/astrogeology/spiceql
 
