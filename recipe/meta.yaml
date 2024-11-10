@@ -28,16 +28,16 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
+    - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - cmake >=3.14
     - make
     - swig
-
   host:
     - python
     - setuptools
     - cpp-filesystem
-    - fmt >9,<10
+    - fmt
     - pip
     - cereal
     - highfive
