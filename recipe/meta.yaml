@@ -42,7 +42,7 @@ requirements:
     - cereal
     - highfive
     - cspice
-    - spdlog
+    - spdlog =1.13
   run:
     - cspice
     - python
