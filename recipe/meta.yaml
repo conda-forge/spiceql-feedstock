@@ -32,20 +32,19 @@ requirements:
     - cmake >=3.14
     - make
     - swig
+    - fmt >9,<10
+    - spdlog =1.12
 
   host:
     - python
     - setuptools
     - cpp-filesystem
-    - fmt >9,<10
     - pip
     - cereal
     - highfive
     - cspice
-    - spdlog =1.12
   run:
     - cspice
-    - python
     - hdf5
 
 test:
