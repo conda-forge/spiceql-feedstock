@@ -36,7 +36,6 @@ requirements:
     - spdlog =1.12
 
   host:
-    - python
     - setuptools
     - cpp-filesystem
     - pip
@@ -46,6 +45,7 @@ requirements:
   run:
     - cspice
     - hdf5
+    - python
 
 test:
   imports:
