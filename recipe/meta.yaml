@@ -45,6 +45,7 @@ requirements:
   run:
     - cspice
     - hdf5
+    - libcurl
     - python
 
 test:
