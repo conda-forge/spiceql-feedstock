@@ -11,7 +11,7 @@ Summary: This Library provides a C++ interface querying, reading and writing Nai
 
 Development: https://code.usgs.gov/astrogeology/spiceql
 
-Documentation: https://sugar-spice.readthedocs.io/en/latest/#docs
+Documentation: https://astrogeology.usgs.gov/docs/manuals/spiceql
 
 Current build status
 ====================
