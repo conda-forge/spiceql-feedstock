@@ -22,7 +22,7 @@ source:
     sha256: 02861d263273c02b91ecafc652608d1004bbd48f75e395ccf7c2d07ed502c1ed
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -36,6 +36,7 @@ requirements:
     - spdlog =1.12
 
   host:
+    - python
     - setuptools
     - cpp-filesystem
     - pip
@@ -66,7 +67,7 @@ about:
     - submodules/json/LICENSE.MIT
     - submodules/gularkfilesystem/LICENSE
     - submodules/BTree/LICENSE.md
-  doc_url: https://sugar-spice.readthedocs.io/en/latest/#docs
+  doc_url: https://astrogeology.usgs.gov/docs/manuals/spiceql
   dev_url: https://code.usgs.gov/astrogeology/spiceql
 
 extra:
