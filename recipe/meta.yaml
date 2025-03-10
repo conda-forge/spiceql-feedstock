@@ -22,7 +22,7 @@ source:
     sha256: 02861d263273c02b91ecafc652608d1004bbd48f75e395ccf7c2d07ed502c1ed
 
 build:
-  number: 0
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -36,6 +36,7 @@ requirements:
     - spdlog =1.12
 
   host:
+    - python
     - setuptools
     - cpp-filesystem
     - pip
