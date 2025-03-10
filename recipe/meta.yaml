@@ -67,7 +67,7 @@ about:
     - submodules/json/LICENSE.MIT
     - submodules/gularkfilesystem/LICENSE
     - submodules/BTree/LICENSE.md
-  doc_url: http://astrogeology.usgs.gov/docs/manuals/spiceql
+  doc_url: https://astrogeology.usgs.gov/docs/manuals/spiceql
   dev_url: https://code.usgs.gov/astrogeology/spiceql
 
 extra:
