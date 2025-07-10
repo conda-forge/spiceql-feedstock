@@ -9,6 +9,9 @@ source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
     sha256: 05ad0deea1b9a41abfda735ecb4a336bf5ef8f1be764774f21d5919679348fec
+    patches:
+      - CMakeLists.patch
+    sha256: 05ad0deea1b9a41abfda735ecb4a336bf5ef8f1be764774f21d5919679348fec
 
   # submodules
   - folder: submodules/json
@@ -21,6 +24,8 @@ source:
     url: https://github.com/frozenca/BTree/archive/924230033c9696758958e7ea6877c21da24ea2da.zip
     sha256: 02861d263273c02b91ecafc652608d1004bbd48f75e395ccf7c2d07ed502c1ed
 
+
+
 build:
   number: 0
   skip: true  # [win]
@@ -29,25 +34,28 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cmake >=3.14
     - make
     - swig
-    - fmt >9,<10
-    - spdlog =1.12
+    - setuptools
 
   host:
     - python
-    - setuptools
     - cpp-filesystem
     - pip
     - cereal
     - highfive
     - cspice
+    - libcurl
+    - hdf5
+    - fmt >9,<10
+    - spdlog =1.12
   run:
     - cspice
-    - hdf5
-    - libcurl
     - python
+    - libcurl
 
 test:
   imports:
