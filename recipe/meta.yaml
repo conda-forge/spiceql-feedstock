@@ -1,5 +1,5 @@
 {% set name = "spiceql" %}
-{% set version = "1.1.3" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,11 @@ package:
 source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: 4f3a10ffd499722f45aeb7866c9a3f2f527f5d845ad712c45be4c30e66d63cdc
+    sha256: 05ad0deea1b9a41abfda735ecb4a336bf5ef8f1be764774f21d5919679348fec
     patches:
       - CMakeLists.patch
-  
+    sha256: 05ad0deea1b9a41abfda735ecb4a336bf5ef8f1be764774f21d5919679348fec
+
   # submodules
   - folder: submodules/json
     url: https://github.com/nlohmann/json/archive/fac07e22c5d7dd0423ccf31c02db5603d27e6556.zip
