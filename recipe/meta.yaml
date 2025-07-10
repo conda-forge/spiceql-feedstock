@@ -38,10 +38,10 @@ requirements:
     - cmake >=3.14
     - make
     - swig
+    - setuptools
 
   host:
     - python
-    - setuptools
     - cpp-filesystem
     - pip
     - cereal
@@ -49,10 +49,10 @@ requirements:
     - cspice
     - libcurl
     - hdf5
-    - cspice
     - fmt >9,<10
     - spdlog =1.12
   run:
+    - cspice
     - python
 
 test:
