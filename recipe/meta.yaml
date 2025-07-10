@@ -38,8 +38,6 @@ requirements:
     - cmake >=3.14
     - make
     - swig
-    - fmt >9,<10
-    - spdlog =1.12
 
   host:
     - python
@@ -50,9 +48,11 @@ requirements:
     - highfive
     - cspice
     - libcurl
-  run:
-    - cspice
     - hdf5
+    - cspice
+    - fmt >9,<10
+    - spdlog =1.12
+  run:
     - python
 
 test:
