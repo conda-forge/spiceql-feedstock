@@ -4,7 +4,7 @@
    find_package(cereal REQUIRED)
    find_package(spdlog REQUIRED)
    find_package(HighFive REQUIRED)
-+  find_package(CURL REQUIRED PATHS ${CMAKE_PREFIX_PATH} NO_DEFAULT_PATH)
++  find_package(CURL REQUIRED PATHS ${CONDA_PREFIX} NO_DEFAULT_PATH)
  
    set(SPICEQL_INSTALL_INCLUDE_DIR "include/SpiceQL")
    set(SPICEQL_SRC_FILES   ${CMAKE_CURRENT_SOURCE_DIR}/SpiceQL/src/spiceql.cpp 
