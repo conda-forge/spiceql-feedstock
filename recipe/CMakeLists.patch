@@ -12,7 +12,7 @@
                          cspice
                          spdlog::spdlog_header_only
                          HighFive
-+                        CURL
++                        CURL::libcurl
                          )
     
    install(TARGETS SpiceQL LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
