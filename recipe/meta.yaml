@@ -38,9 +38,9 @@ requirements:
     - cmake >=3.14
     - make
     - swig
-    - setuptools
 
   host:
+    - setuptools
     - cpp-filesystem
     - pip
     - cereal
