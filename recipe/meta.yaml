@@ -41,7 +41,6 @@ requirements:
     - setuptools
 
   host:
-    - python
     - cpp-filesystem
     - pip
     - cereal
@@ -52,6 +51,8 @@ requirements:
     - spdlog =1.12
     - openssl
     - libcurl
+  run:
+    - python
 
 test:
   imports:
