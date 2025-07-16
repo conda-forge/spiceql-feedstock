@@ -39,7 +39,6 @@ requirements:
     - make
     - swig
     - setuptools
-    - libcurl
 
   host:
     - python
