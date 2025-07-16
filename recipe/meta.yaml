@@ -53,6 +53,7 @@ requirements:
     - libcurl
   run:
     - python
+    - cspice
 
 test:
   imports:
