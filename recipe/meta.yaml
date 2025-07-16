@@ -48,14 +48,12 @@ requirements:
     - cereal
     - highfive
     - cspice
-    - libcurl
     - hdf5
     - fmt >9,<10
     - spdlog =1.12
   run:
     - cspice
     - python
-    - libcurl
 
 test:
   imports:
