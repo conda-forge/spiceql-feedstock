@@ -37,7 +37,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - make
     - swig
-    - cmake >=3.14                           # [build_platform != target_platform]
+    - cmake-no-system >=3.14
 
   host:
     - setuptools
