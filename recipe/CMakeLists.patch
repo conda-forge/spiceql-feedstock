@@ -1,0 +1,18 @@
+--- CMakeLists.txt	2025-07-10 14:40:30
++++ /tmp/CMakeLists.new.txt	2025-07-10 14:40:17
+@@ -59,6 +59,7 @@
+   find_package(cereal REQUIRED)
+   find_package(spdlog REQUIRED)
+   find_package(HighFive REQUIRED)
++  find_package(CURL REQUIRED)
+ 
+   set(SPICEQL_INSTALL_INCLUDE_DIR "include/SpiceQL")
+   set(SPICEQL_SRC_FILES   ${CMAKE_CURRENT_SOURCE_DIR}/SpiceQL/src/spiceql.cpp 
+@@ -151,6 +152,7 @@
+                         cspice
+                         spdlog::spdlog_header_only
+                         HighFive
++                        CURL::libcurl
+                         )
+    
+   install(TARGETS SpiceQL LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
