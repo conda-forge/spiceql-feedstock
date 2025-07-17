@@ -7,10 +7,12 @@ package:
 
 source:
   - folder: .
-    url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: f21d75f3fa731b03a0f126c12d8269e85bbdff1fcf512e3bc07c5b6f8437ea4b
-    patches:
-      - CMakeLists.patch
+    git_url: 'https://github.com/acpaquette/SpiceQL.git'
+    git_tag: curl_fix
+    # url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
+    # sha256: f21d75f3fa731b03a0f126c12d8269e85bbdff1fcf512e3bc07c5b6f8437ea4b
+    # patches:
+    #   - CMakeLists.patch
 
   # submodules
   - folder: submodules/json
@@ -35,11 +37,11 @@ requirements:
     - {{ stdlib("c") }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cmake >=3.14
     - make
     - swig
 
   host:
+    - cmake >=3.14
     - setuptools
     - cpp-filesystem
     - pip
@@ -54,6 +56,9 @@ requirements:
   run:
     - python
     - cspice
+    - openssl
+    - libcurl
+    - highfive
 
 test:
   imports:
