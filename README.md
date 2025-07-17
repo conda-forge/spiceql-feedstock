@@ -188,5 +188,6 @@ Feedstock Maintainers
 =====================
 
 * [@Kelvinrr](https://github.com/Kelvinrr/)
+* [@acpaquette](https://github.com/acpaquette/)
 * [@chkim-usgs](https://github.com/chkim-usgs/)
 
