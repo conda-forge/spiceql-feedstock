@@ -1,0 +1,31 @@
+From 388dc1eaaa77f824cb8749552dd7b0a1a817cdd7 Mon Sep 17 00:00:00 2001
+From: acpaquette <acpaquette@usgs.gov>
+Date: Thu, 17 Jul 2025 15:01:57 -0700
+Subject: [PATCH] Change find_package for packages with config files
+
+---
+ CMakeLists.txt | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 981f15a..a39865f 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -54,10 +54,10 @@ if(SPICEQL_BUILD_LIB)
+   add_subdirectory("submodules/gularkfilesystem")
+   add_subdirectory("submodules/json")
+   
+-  find_package(CSpice REQUIRED)
+-  find_package(fmt REQUIRED)
+-  find_package(cereal REQUIRED)
+-  find_package(spdlog REQUIRED)
++  find_package(cspice REQUIRED CONFIG)
++  find_package(fmt REQUIRED CONFIG)
++  find_package(cereal REQUIRED CONFIG)
++  find_package(spdlog REQUIRED CONFIG)
+   find_package(HighFive REQUIRED)
+ 
+   set(SPICEQL_INSTALL_INCLUDE_DIR "include/SpiceQL")
+-- 
+2.39.5 (Apple Git-154)
+
