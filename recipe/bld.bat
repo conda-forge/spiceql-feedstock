@@ -1,8 +1,8 @@
 mkdir build
 cd build
 cmake ^
-    -GNinja ^
-    -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=ON ^
+    -G "Visual Studio 17 2022" ^
+    -DCMAKE_GENERATOR_PLATFORM=x64 ^
     -DCMAKE_CXX_STANDARD=17 ^
     -DCMAKE_BUILD_TYPE=RELEASE ^
     -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
