@@ -19,7 +19,7 @@ index 981f15a..a39865f 100644
 -  find_package(fmt REQUIRED)
 -  find_package(cereal REQUIRED)
 -  find_package(spdlog REQUIRED)
-+  find_package(cspice REQUIRED CONFIG)
++  find_package(cspice REQUIRED CONFIG PATHS lib/cmake/ HINTS cspice)
 +  find_package(fmt REQUIRED CONFIG)
 +  find_package(cereal REQUIRED CONFIG)
 +  find_package(spdlog REQUIRED CONFIG)
