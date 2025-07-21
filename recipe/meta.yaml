@@ -26,14 +26,14 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - python                                 # [build_platform != target_platform]
+    - python                               
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - make
     - swig
