@@ -8,7 +8,7 @@ package:
 source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: 07f62f4ea6674abe63f07d12a98a2951ff390a47e9cc546b4a5f39ecb6cd9c18
+    sha256: 2952f74495adc6e3ce28344a05c5b2367b2144846184796a8d575fbf37ca2178
     # patches:
       # - CMakeLists.patch
 
