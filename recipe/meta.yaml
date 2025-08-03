@@ -49,7 +49,7 @@ requirements:
     - spdlog =1.12
     - openssl
     - python
-    - libcurl >=8.4, <8.5
+    - libcurl >=8.4,<8.5
   run:
     - python
     - cspice
