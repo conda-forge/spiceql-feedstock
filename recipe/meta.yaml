@@ -24,7 +24,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -49,12 +49,13 @@ requirements:
     - spdlog =1.12
     - openssl
     - python
-    - libcurl
+    - libcurl >=8.4,<8.5
   run:
     - python
     - cspice
     - hdf5
-    - libcurl
+    - {{ pin_compatible('libcurl', max_pin='x.x') }}
+
 
 test:
   imports:
