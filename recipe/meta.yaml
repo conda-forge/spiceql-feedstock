@@ -47,14 +47,15 @@ requirements:
     - hdf5
     - fmt >9,<10
     - spdlog =1.12
-    - openssl
+    - openssl >=3.1.2,<3.5
     - python
     - libcurl >=8.4,<8.5
   run:
     - python
     - cspice
     - hdf5
-    - {{ pin_compatible('libcurl', max_pin='x.x') }}
+    - libcurl
+    - openssl
 
 
 test:
