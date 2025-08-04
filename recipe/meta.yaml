@@ -24,7 +24,7 @@ source:
 
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -47,7 +47,7 @@ requirements:
     - hdf5
     - fmt >9,<10
     - spdlog =1.12
-    - openssl
+    - openssl >=3.1.2,<3.5
     - python
     - libcurl >=8.4,<8.5
   run:
@@ -55,6 +55,7 @@ requirements:
     - cspice
     - hdf5
     - {{ pin_compatible('libcurl', max_pin='x.x') }}
+    - {{ pin_compatible('openssl', max_pin='x.x') }}
 
 
 test:
