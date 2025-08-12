@@ -24,7 +24,7 @@ source:
 
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
@@ -47,9 +47,9 @@ requirements:
     - hdf5
     - fmt >9,<10
     - spdlog =1.12
-    - openssl >=3.1.2,<3.5
+    - openssl >=3.5,<4
     - python
-    - libcurl >=8.4,<8.5
+    - libcurl >=8.14.1,<9
   run:
     - python
     - cspice
