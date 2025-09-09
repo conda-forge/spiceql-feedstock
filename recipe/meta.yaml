@@ -1,5 +1,5 @@
 {% set name = "spiceql" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,9 +8,7 @@ package:
 source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: 2952f74495adc6e3ce28344a05c5b2367b2144846184796a8d575fbf37ca2178
-    # patches:
-      # - CMakeLists.patch
+    sha256: b76b2c66131e96eb0a80718717b2447c53a33a42e73dcd568c508c9e70474d2b
 
   # submodules
   - folder: submodules/json
@@ -49,14 +47,16 @@ requirements:
     - hdf5
     - fmt >9,<10
     - spdlog =1.12
-    - openssl
+    - openssl >=3.5,<4
     - python
-    - libcurl
+    - libcurl >=8.14.1,<9
   run:
     - python
     - cspice
     - hdf5
-    - libcurl
+    - {{ pin_compatible('libcurl', max_pin='x.x') }}
+    - {{ pin_compatible('openssl', max_pin='x.x') }}
+
 
 test:
   imports:
