@@ -9,6 +9,8 @@ source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
     sha256: b76b2c66131e96eb0a80718717b2447c53a33a42e73dcd568c508c9e70474d2b
+    patches:
+      - patches/0001-Addressed-json-warnings-and-fixed-for-current-fmt-sp.patch
 
   # submodules
   - folder: submodules/json
@@ -24,7 +26,7 @@ source:
 
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
 
 requirements:
@@ -45,8 +47,8 @@ requirements:
     - highfive
     - cspice
     - hdf5
-    - fmt >9,<10
-    - spdlog =1.12
+    - fmt
+    - spdlog
     - openssl >=3.5,<4
     - python
     - libcurl >=8.14.1,<9
