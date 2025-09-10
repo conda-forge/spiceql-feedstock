@@ -21,6 +21,9 @@ source:
     url: https://github.com/frozenca/BTree/archive/924230033c9696758958e7ea6877c21da24ea2da.zip
     sha256: 02861d263273c02b91ecafc652608d1004bbd48f75e395ccf7c2d07ed502c1ed
 
+  patches:
+    - patches/0001-Addressed-json-warnings-and-fixed-for-current-fmt-sp.patch
+
 
 
 build:
