@@ -11,25 +11,12 @@ Subject: [PATCH] Using updated cspice (#103)
 
 * fix tests
 ---
- CHANGELOG.md                 |  1 +
  CMakeLists.txt               |  9 ++++++---
  SpiceQL/tests/CMakeLists.txt |  7 ++++---
  cmake/FindCSpice.cmake       | 21 ---------------------
  4 files changed, 11 insertions(+), 27 deletions(-)
  delete mode 100644 cmake/FindCSpice.cmake
 
-diff --git a/CHANGELOG.md b/CHANGELOG.md
-index eef3a3a..4aac20c 100644
---- a/CHANGELOG.md
-+++ b/CHANGELOG.md
-@@ -40,6 +40,7 @@ release.
- ### Changed
- - Refactored FastAPI models and added OpenAPI examples [#96](https://github.com/DOI-USGS/SpiceQL/pull/96)
- - Pinned cspice to 67 [#102](https://github.com/DOI-USGS/SpiceQL/pull/102)
-+- Update cmake files to accommodate new cspice package that uses the new cmake recipe [#103](https://github.com/DOI-USGS/SpiceQL/pull/103)
- 
- ### Added
- - Added relative kernel path support for furnishing [#100](https://github.com/DOI-USGS/SpiceQL/pull/100)
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 index fae8746..c802856 100644
 --- a/CMakeLists.txt
