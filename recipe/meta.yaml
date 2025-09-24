@@ -11,6 +11,7 @@ source:
     sha256: b76b2c66131e96eb0a80718717b2447c53a33a42e73dcd568c508c9e70474d2b
     patches:
       - patches/0001-Addressed-json-warnings-and-fixed-for-current-fmt-sp.patch
+      - patches/0002-Using-updated-cspice-103.patch
 
   # submodules
   - folder: submodules/json
@@ -26,7 +27,7 @@ source:
 
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win]
 
 requirements:
