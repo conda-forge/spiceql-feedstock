@@ -31,7 +31,9 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - cmake >=3.14
+    - python                               
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cmake-no-system >=3.14
     - make
     - swig
     - fmt >9,<10
