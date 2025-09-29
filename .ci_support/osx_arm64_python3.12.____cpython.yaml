@@ -14,23 +14,13 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '19'
-fmt:
-- '11.2'
-hdf5:
-- 1.14.6
-libcurl:
-- '8'
 macos_machine:
 - arm64-apple-darwin20.0.0
-openssl:
-- '3'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
 - 3.12.* *_cpython
-spdlog:
-- '1.15'
 target_platform:
 - osx-arm64
