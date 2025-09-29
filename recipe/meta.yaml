@@ -7,7 +7,7 @@ package:
 
 source:
   - folder: .
-    url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
+    url: https://hub.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
     sha256: b76b2c66131e96eb0a80718717b2447c53a33a42e73dcd568c508c9e70474d2b
     patches:
       - patches/0001-Addressed-json-warnings-and-fixed-for-current-fmt-sp.patch
