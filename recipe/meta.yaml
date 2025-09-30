@@ -1,5 +1,5 @@
 {% set name = "spiceql" %}
-{% set version = "1.2.4" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,10 @@ package:
 
 source:
   - folder: .
-    url: https://hub.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: b76b2c66131e96eb0a80718717b2447c53a33a42e73dcd568c508c9e70474d2b
+    url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
+    sha256: dccdd02852b65ebbac60fb67d0d06a2188adaf3dc63fe0ee3bd8ac8b73f59421
     patches:
-      - patches/0001-Addressed-json-warnings-and-fixed-for-current-fmt-sp.patch
-      - patches/0002-Using-updated-cspice-103.patch
+        - patches/0002-Using-updated-cspice-103.patch
 
   # submodules
   - folder: submodules/json
@@ -24,10 +23,8 @@ source:
     url: https://github.com/frozenca/BTree/archive/924230033c9696758958e7ea6877c21da24ea2da.zip
     sha256: 02861d263273c02b91ecafc652608d1004bbd48f75e395ccf7c2d07ed502c1ed
 
-
-
 build:
-  number: 6
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -36,30 +33,25 @@ requirements:
     - {{ stdlib("c") }}
     - python                               
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cmake-no-system >=3.14
     - make
     - swig
-    - cmake-no-system >=3.14
+    - fmt >9,<10
+    - spdlog =1.12
 
   host:
+    - python
     - setuptools
     - cpp-filesystem
     - pip
     - cereal
     - highfive
     - cspice
-    - hdf5
-    - fmt
-    - spdlog
-    - openssl >=3.5,<4
-    - python
-    - libcurl >=8.14.1,<9
   run:
-    - python
     - cspice
     - hdf5
-    - {{ pin_compatible('libcurl', max_pin='x.x') }}
-    - {{ pin_compatible('openssl', max_pin='x.x') }}
-
+    - libcurl
+    - python
 
 test:
   imports:
