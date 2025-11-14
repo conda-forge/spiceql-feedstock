@@ -27,7 +27,7 @@ source:
 
 
 build:
-  number: 7
+  number: 8
   skip: true  # [win]
 
 requirements:
@@ -57,9 +57,6 @@ requirements:
     - python
     - cspice
     - hdf5
-    - {{ pin_compatible('libcurl', max_pin='x.x') }}
-    - {{ pin_compatible('openssl', max_pin='x.x') }}
-
 
 test:
   imports:
