@@ -9,9 +9,6 @@ source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
     sha256: 754ab13a927003872e6fde5ffad4e7cfb90d04d33d166a0f6181a00bd9070bac
-    patches:
-      - patches/0001-Addressed-json-warnings-and-fixed-for-current-fmt-sp.patch
-      - patches/0002-Using-updated-cspice-103.patch
 
   # submodules
   - folder: submodules/json
