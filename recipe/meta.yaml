@@ -1,5 +1,5 @@
 {% set name = "spiceql" %}
-{% set version = "1.2.4" %}
+{% set version = "1.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,7 @@ package:
 source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: b76b2c66131e96eb0a80718717b2447c53a33a42e73dcd568c508c9e70474d2b
-    patches:
-      - patches/0001-Addressed-json-warnings-and-fixed-for-current-fmt-sp.patch
-      - patches/0002-Using-updated-cspice-103.patch
+    sha256: 754ab13a927003872e6fde5ffad4e7cfb90d04d33d166a0f6181a00bd9070bac
 
   # submodules
   - folder: submodules/json
@@ -27,14 +24,14 @@ source:
 
 
 build:
-  number: 9
+  number: 0
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - python                               
+    - python
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - make
     - swig
