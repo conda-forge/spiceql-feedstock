@@ -1,5 +1,5 @@
 {% set name = "spiceql" %}
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: 754ab13a927003872e6fde5ffad4e7cfb90d04d33d166a0f6181a00bd9070bac
+    sha256: 7499f1d1cf7afa1e19ff2783ff7200c7ee7fb2e16249e075e1238ee8d235ee03
 
   # submodules
   - folder: submodules/json
