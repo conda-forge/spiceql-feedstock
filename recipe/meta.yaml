@@ -24,18 +24,20 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
+    - cmake-no-system >=3.14
     - {{ compiler('cxx') }}
+    - fmt
+    - make
     - {{ stdlib("c") }}
+    - spdlog
+    - swig
     - python
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - make
-    - swig
-    - cmake-no-system >=3.14
 
   host:
     - setuptools
@@ -45,8 +47,6 @@ requirements:
     - highfive
     - cspice
     - hdf5
-    - fmt
-    - spdlog
     - openssl >=3.5,<4
     - python
     - libcurl >=8.14.1,<9
