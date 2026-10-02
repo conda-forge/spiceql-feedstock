@@ -1,5 +1,5 @@
 {% set name = "spiceql" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,18 +8,18 @@ package:
 source:
   - folder: .
     url: https://github.com/DOI-USGS/SpiceQL/archive/refs/tags/{{ version }}.tar.gz
-    sha256: 01ed62b9123aceef4314f672aa7e52b6c3f68585f6839551ce65b4bd01e1ad9d
+    sha256: 9cf76ed0aae3f1bb1f63150db843180e5d16d5021834c747e8b79cd6737a4b9e
 
   # submodules
   - folder: submodules/json
     url: https://github.com/nlohmann/json/archive/fac07e22c5d7dd0423ccf31c02db5603d27e6556.zip
     sha256: 191543fd27175d57bd6d2f56cb4f63e424cb56379acb6f367bad3ce34a2bb9c3
   - folder: submodules/gularkfilesystem
-    url: https://github.com/gulrak/filesystem/archive/fcea331ebb8273581cef3e91a131e3d7877f7dfd.zip
-    sha256: c2775dccc5d8f6d8654bd4b1ef2302b26b8cb75f140640dc2328a58d643f3818
+    url: https://github.com/gulrak/filesystem/archive/b15977a05aa10fff396ffb93b539fff33dd9187e.zip
+    sha256: 3c213e560fd59fc46897d6a169431d60765dffd4031b78544ec76de195bde460
   - folder: submodules/BTree
-    url: https://github.com/frozenca/BTree/archive/924230033c9696758958e7ea6877c21da24ea2da.zip
-    sha256: 02861d263273c02b91ecafc652608d1004bbd48f75e395ccf7c2d07ed502c1ed
+    url: https://github.com/frozenca/BTree/archive/ff6881996ff3c46ded564f92bc589fcbd218df00.zip
+    sha256: 1ca35dc6898f36711219d92c9d0763ff187af9b9d1ae9385377322b45dfb3f4e
 
 
 
